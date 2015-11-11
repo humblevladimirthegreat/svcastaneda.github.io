@@ -77,3 +77,15 @@ footer {
 .next {
 	float: right;
 }
+
+code {
+	font-size: 115%;
+	font-weight: bold;
+	color: mediumVioletRed;
+	background-color: ivory;
+}
+
+blockquote {
+	border-left: solid #8695A4 3px;
+	padding-left: 3%;
+}
