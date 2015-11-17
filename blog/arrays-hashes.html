@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="../stylesheets/default.css" type="text/css" media="screen">
+    <title>Arrays vs Hashes</title>
+</head>
+<body>
+	<div class="main">
+    <header>
+      <h1>Title</h1>
+      <nav>
+        <a href="../index.html">Home</a> | 
+        <a href="#">About Me</a> | 
+        <a href="#">Resume</a> | 
+        <a href="#">Projects</a> | 
+        <a href="index.html" class="selected">Blog</a> | 
+        <a href="#">Contact</a>
+	    </nav>
+	  </header>
+		
+    <div class="socialMediaLinks">
+ 		  <a href="https://plus.google.com/+SaundraCastaneda/" target="_blank"><img src="../imgs/google-plus.png" alt="Google Plus" height="36"></a>
+ 		  <a href="https://github.com/svcastaneda" target="_blank"><img src="../imgs/GitHub.png" alt="GitHub" height="34px"></a>
+ 		  <a href="https://www.linkedin.com/in/svcastaneda" target="_blank"><img src="../imgs/LinkedIn.png" height="34" alt="LinkedIn"></a>
+    </div>
+		
+		<div class="content">
+	    <button><a href="index.html">&lt;&lt; back</a></button>
+    
+      <h1>Arrays vs Hashes</h1>
+			<h4>November 15th</h4>
+			
+			<p>Knowing whether to use an array or hash can be challenging because they both hold data that you can access. So what's the difference?</p>
+			
+			<hr>
+			
+			<h3>Arrays</h3>
+			<p>Arrays are basically indexed lists. When I say indexed, I mean that you can retrieve data by calling an index. You would use an array when you just need a simple collection of data.</p>
+			<blockquote>
+				<b>Example:</b> If you created this array: <code>list = ["a", "b", "c"]</code> and called the index 0 like this: <code>list[0]</code>, it would return the value <code>"a"</code>.
+			</blockquote>
+			
+			<hr>
+			
+			<h3>Hashes</h3>
+			<p>You can think of hashes like dictionaries. They have keys and values similar to how a dictionary has unique words and definitions. You wouldn't find the word "apple" listed more than once. Instead, you would find all of the various definitions listed under one word. But unlike dictionaries, hashes are unordered (except for newer versions of Ruby). So, instead of using indexes to access the data, you need to call a hash's key, which will return its value(s). Hashes are good to use when you have to map information or group data together, but the data falls under one category. This could be </p>
+			<blockquote>
+				<b>Example:</b> If you created this hash for students in your class that are mapped by their student ID number: <code>students = [23148123=>"Sammy", 12381415=>"Dexter", 82373234=>"Lucy"]</code> and called the key 23148123 like this: <code>students[23148123]</code>, it would return the value <code>"Sammy"</code>.
+			</blockquote>
+			
+    </div>
+	
+	
+	</div>
+</body>
+</html>
