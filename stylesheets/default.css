@@ -48,8 +48,9 @@ nav {
 
 .picture {
 	float: right;
-	clear: right;
-	width: 25%;
+	clear: left;
+	margin-right: 1%;
+	width: 24%;
 }
 
 hr {
