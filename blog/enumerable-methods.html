@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="../stylesheets/default.css" type="text/css" media="screen">
+    <title>Ruby's map method</title>
+</head>
+<body>
+	<div class="main">
+    <header>
+      <h1>Blog</h1>
+      <nav>
+        <a href="../index.html">Home</a> | 
+        <a href="#">About Me</a> | 
+        <a href="#">Resume</a> | 
+        <a href="#">Projects</a> | 
+        <a href="index.html" class="selected">Blog</a> | 
+        <a href="../contact.html">Contact</a>
+	    </nav>
+	  </header>
+		
+    <div class="socialMediaLinks">
+ 		  <a href="https://plus.google.com/+SaundraCastaneda/" target="_blank"><img src="../imgs/google-plus.png" alt="Google Plus" height="36"></a>
+ 		  <a href="https://github.com/svcastaneda" target="_blank"><img src="../imgs/GitHub.png" alt="GitHub" height="34px"></a>
+ 		  <a href="https://www.linkedin.com/in/svcastaneda" target="_blank"><img src="../imgs/LinkedIn.png" height="34" alt="LinkedIn"></a>
+    </div>
+		
+		<div class="content">
+	    <button><a href="index.html">&lt;&lt; back</a></button>
+    
+      <h1>Ruby's map method</h1>
+			<h4>November 23rd</h4>
+			
+			<p>To a beginner, the map method may seem intimidating. But fear not, young padawan! The map method can be a very good friend once you understand how it works!</p>
+			<p>Basically, map iterates through a range of numbers, array, or hash and implements a block of code to each item. Map without the bang operator (!) are non-destructive, while map with the bang (!) is destructive. To be non-destructive means to return an altered clone of the original data. To be destructive is to alter the original given data.</p>
+			
+			<b>Structure on how to use map:</b> <code>(data).map { |obj| block }</code>
+
+			<p><b>Example (non-destructive version):</b></p>
+			<blockquote><code>
+				2.1.5 :001 > names = ['Saundra', 'Jonathan', 'Megan', 'Eddie', 'Alex']<br>
+				 => ["Saundra", "Jonathan", "Megan", "Eddie", "Alex"]<br>
+				2.1.5 :002 > names.map {|name| p "Hello " + name}<br>
+				"Hello Saundra"<br>
+				"Hello Jonathan"<br>
+				"Hello Megan"<br>
+				"Hello Eddie"<br>
+				"Hello Alex"<br>
+				 => ["Hello Saundra", "Hello Jonathan", "Hello Megan", "Hello Eddie", "Hello Alex"]<br>
+				2.1.5 :003 > names<br>
+				 => ["Saundra", "Jonathan", "Megan", "Eddie", "Alex"]<br>
+				2.1.5 :004 >
+			</code></blockquote>
+			
+			<p>As you can see, using the map method did not alter the original array.</p>
+    </div>
+	
+	
+	</div>
+</body>
+</html>
