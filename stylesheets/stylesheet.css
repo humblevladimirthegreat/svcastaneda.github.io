@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	background-color: aliceblue;
+	min-width: 500px;
+	font-family: "Century Gothic";
+}
+
+header {
+	background-image: url('../imgs/background.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	width: 100%;
+	color: #FCD8C4;
+}
+
+header h1 {
+	padding-top: 3%;
+	font-size: 3.5em;
+	margin-bottom: 3%;
+	text-shadow: -1px -1px 0 black,
+								1px -1px 0 black,
+							 -1px  1px 0 black,
+							 	1px	 1px 0 black;
+}
+
+table {
+	background-color: lightgrey;
+	width: 100%;
+	opacity: 0.8;
+}
+
+header td {
+	border: solid black 1px;
+	width: 16.666667%;
+	height: 1.5em;
+	text-align: center;
+	padding: 0;
+	opacity: 0.8;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+td:hover {
+	background-color: darkgrey;
+	opacity: 1;
+}
+
+.socialMediaLinks {
+	background-color: #BDC1C3;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+.socialMediaLinks img {
+	margin: 1% 3%;
+	height: 3%;
+}
+
+.content {
+	padding: 0 3.5% 8% 3.5%;
+}
+
+hr {
+	border: 1px dashed grey;
+}
+
+code {
+	font-size: 115%;
+	font-weight: bold;
+	color: mediumVioletRed;
+	background-color: lightGrey;
+}
+
+blockquote {
+	border-left: solid #8695A4 3px;
+	padding-left: 3%;
+}
+
+.readMore {
+	text-align: center;
+	font-style: oblique;
+}
+
+.readMore:hover {
+	text-decoration: underline;
+}
+
+.metaList {
+	list-style-type: circle;
+}
+
+.picture {
+	box-shadow: 7px 7px 10px grey;
+	float: right;
+	clear: both;
+	margin-left: 2%;
+}
