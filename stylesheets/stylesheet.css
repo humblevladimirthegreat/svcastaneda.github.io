@@ -8,7 +8,7 @@ body {
 header {
 	background-image: url('../imgs/background.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position-y: 42%;
 	text-align: center;
 	width: 100%;
 	color: #FCD8C4;
@@ -75,6 +75,10 @@ code {
 	font-weight: bold;
 	color: mediumVioletRed;
 	background-color: lightGrey;
+	display: -webkit-inline-box;
+  border-radius: 10px;
+  padding: 5px;
+	margin: 5px;
 }
 
 blockquote {
