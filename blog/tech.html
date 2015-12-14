@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<head>
+	<link rel="stylesheet" href="../stylesheets/stylesheet.css" type="text/css" media="screen">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Blog</title>
+	
+</head>
+<body onload="">
+	<header>
+		<h1>Blog</h1>
+		<table>
+			<tr>
+				<td><a href="../index.html">Home</a></td>
+				<td><a href="../about.html">About Me</a></td>
+				<td><a href="">Resume</a></td>
+				<td><a href="../projects/index.html">Projects</a></td>
+				<td><a href="index.html">Blog</a></td>
+				<td><a href="../contact.html">Contact</a></td>
+			</tr>
+		</table>
+	</header>
+	
+  <div class="content">
+    <button><a href="index.html">&lt;&lt; back</a></button>
+
+    <h1>Recursion</h1>
+		<h4>December 13</h4>
+	
+		<p>What is recursion? Well, to put it simply, it is a method that calls itself. You're probably thinking to yourself "that's silly. Why would you ever want to do such a thing? Can't you just write a loop instead?"</p>
+		<p>Well, the answer is yes and no. Sometimes problems are better solved with recursion because less code is required with recursion. It can also help out with runtime.</p>
+		<p>A popular example of recursion is calculating the factorial of an integer. Yes, you can write a for loop that runs N number of times, but it would be a lot cleaner to write it recursively. Let's take a look at what these two methods would look like:</p>
+		<p><b>Using a loop:</b></p>
+		<blockquote><code>
+			def factorial(num)<br>
+			&nbsp;&nbsp;answer = 1<br>
+			&nbsp;&nbsp;for x in 1..num<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;answer *= x<br>
+			&nbsp;&nbsp;end<br>
+			&nbsp;&nbsp;return answer<br>
+			end
+		</code></blockquote>
+		<p><b>Using recursion:</b></p>
+		<blockquote><code>
+			def factorial(num)<br>
+			&nbsp;&nbsp;if num&lt;=1<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+			&nbsp;&nbsp;else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num * factorial(num-1)<br>
+			&nbsp;&nbsp;end<br>
+			end
+		</code></blockquote>
+		<p>In order to stop a method from calling itself an infinite amount of times, you need to add a base case. Base cases are what break the recursive call. Recursion may seem confusing and intimidating, but it's very important to understand since it's one of the fundamentals of computer science.</p>
+		<blockquote>
+			"In order to understand recursion, one must first understand recursion." -a very wise (and witty) person
+		</blockquote>
+  </div>
+	
+  <div class="socialMediaLinks">
+	  <a href="https://plus.google.com/+SaundraCastaneda/" target="_blank"><img src="../imgs/google-plus.png" alt="Google Plus" height="36"></a>
+	  <a href="https://github.com/svcastaneda" target="_blank"><img src="../imgs/GitHub.png" alt="GitHub" height="34px"></a>
+	  <a href="https://www.linkedin.com/in/svcastaneda" target="_blank"><img src="../imgs/LinkedIn.png" height="34" alt="LinkedIn"></a>
+  </div>
+</body>
