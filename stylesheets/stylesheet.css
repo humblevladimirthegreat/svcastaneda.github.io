@@ -39,7 +39,7 @@ header td {
 	opacity: 0.8;
 }
 
-a, a:visited {
+header a, a:visited {
 	text-decoration: none;
 	color: inherit;
 }
@@ -104,4 +104,23 @@ blockquote {
 	float: right;
 	clear: both;
 	margin-left: 2%;
+}
+
+* .code-preview td:nth-child(3) {
+	font-size:100%;
+	line-height:1;
+	font-family: -webkit-body;
+}
+
+.code-preview td, th {
+	width: 33.333%;
+	vertical-align: top;
+	border: black solid 1px;
+	padding: 3px;
+}
+
+.code-preview a {
+	color: -webkit-link;
+	text-decoration: underline;
+	cursor: auto;
 }
